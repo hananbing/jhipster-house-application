@@ -1,0 +1,104 @@
+
+entity SecondHandHouse {
+	//basic
+    regionName String,
+    //apartment HouseApartment,
+    bedroomNum Integer,
+    hallNum Integer,
+    kitchenNum Integer,
+    toiletNum Integer,
+    apartmentText String
+    
+    floorage Integer,
+    internalArea Integer,
+    orientation HouseOrientation,
+    decoration String,
+    hasElevator Boolean,
+    //storeyInfo StoreyInfo,
+    totalFloor Integer,
+    floorNum Integer,
+    floorType FloorType,
+    
+    huxingStructure HuxingStructure,
+    ageOfBuilding Integer,
+    renovationType RenovationType,
+    architecturalType ArchitecturalType,
+    buildingStructure BuildingStructure,
+    elevatorRatio ElevatorRatio,
+    propertyRightYears Integer,
+    
+    
+    //transactionInfo TransactionInfo,
+    
+    otherInfo String,
+    totalPrice Long,
+    unitPrice Long,
+    communityName String,
+	region String,
+    openHome String,
+	agent String,
+    houseCode Long,
+    //featureInfo FeatureInfo,
+    houseTag HouseTag,
+    matchingInfo String,
+    communityInfo String,
+    trafficTrip String,
+    coreSellingPoint String,
+    //ElevatorRatio
+    elevatorNum Integer,
+    householdNum Integer,
+    
+    ownership Ownership,
+    purposeType PurposeType
+}
+
+
+
+
+
+
+
+
+
+enum BuildingStructure {
+   BRICK_CONCRETE, REINFORCED_CONCRETE, FRAME, FRAME_SHEAR, STEEL, CORE_TUBE
+}
+
+enum HuxingStructure {
+   LEAPING_FLOOR, COMPOUND_FLOOR, FLAT_FLOOR, STAGGERED_FLOOR, BAY
+}
+
+enum ArchitecturalType {
+   TOWER, BANLOU, PLATE_TOWER_COMBINATION
+}
+
+enum Ownership {
+    COMMERCIAL, PUBLIC, ECONOMIC, OTHER
+}
+
+enum PurposeType {
+    ORDINARY, BUSINESS, VILLA, COURTYARD_DWELLINGS, PARKING_LOT, OTHER
+}
+
+
+enum RenovationType {
+    ROUGHCAST, ORDINARY, HARDCOVER
+}
+
+enum HouseTag {
+    GOOD_ROOM, FULL_TWO_YEARS, FULL_FIVE_YEARS, VR, SEVEN_DAYS, ANYTIME
+}
+
+enum HouseOrientation {
+    NORTH_SOUTH, EAST, SOUTH, WEST, NORTH
+}
+enum FloorType {
+    LOW, MIDDLE, HEIGHT
+}
+
+
+
+
+
+
+
